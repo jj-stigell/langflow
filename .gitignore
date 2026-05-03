@@ -296,3 +296,11 @@ tmp_toolguard/
 
 #whitesource
 whitesource/
+
+# Azure deployment
+.azure/**/*
+!.azure/plan.md
+!.azure/README.md
+!.azure/.env.example
+!.azure/config.json
+!.azure/hooks/

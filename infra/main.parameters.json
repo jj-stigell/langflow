@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "appServicePlanSku": {
+      "value": "${APP_SERVICE_PLAN_SKU=B2}"
+    },
+    "dockerImage": {
+      "value": "${SERVICE_WEB_IMAGE_NAME}"
+    },
+    "dockerImageTag": {
+      "value": "${SERVICE_WEB_IMAGE_TAG=latest}"
+    },
+    "databaseUrl": {
+      "value": "${LANGFLOW_DATABASE_URL}"
+    },
+    "langflowSuperuser": {
+      "value": "${LANGFLOW_SUPERUSER}"
+    },
+    "langflowSuperuserPassword": {
+      "value": "${LANGFLOW_SUPERUSER_PASSWORD}"
+    },
+    "langflowConfigDir": {
+      "value": "${LANGFLOW_CONFIG_DIR=/home/langflow-data}"
+    },
+    "langflowLogLevel": {
+      "value": "${LANGFLOW_LOG_LEVEL=INFO}"
+    }
+  }
+}
