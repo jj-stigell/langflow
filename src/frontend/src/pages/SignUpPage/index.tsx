@@ -90,9 +90,9 @@ export default function SignUp(): JSX.Element {
         <div className="flex w-72 flex-col items-center justify-center gap-2">
           <LangflowLogo
             title="Langflow logo"
-            className="mb-4 h-10 w-10 scale-[1.5]"
+            className="mb-4 h-10 w-10 scale-[3.5]"
           />
-          <span className="mb-6 text-2xl font-semibold text-primary">
+          <span className="my-6 text-2xl font-semibold text-primary">
             {t("auth.signupTitle")}
           </span>
           <div className="mb-3 w-full">
