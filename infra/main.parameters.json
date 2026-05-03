@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName":          { "value": "${AZURE_ENV_NAME}" },
+    "location":                 { "value": "${AZURE_LOCATION}" },
+    "appServicePlanSku":        { "value": "${APP_SERVICE_PLAN_SKU=B2}" },
+    "dockerImage":              { "value": "${DOCKER_IMAGE_NAME=}" },
+    "dockerImageTag":           { "value": "${DOCKER_IMAGE_TAG=latest}" },
+    "databaseUrl":              { "value": "${LANGFLOW_DATABASE_URL}" },
+    "langflowSuperuser":        { "value": "${LANGFLOW_SUPERUSER}" },
+    "langflowSuperuserPassword":{ "value": "${LANGFLOW_SUPERUSER_PASSWORD}" },
+    "langflowConfigDir":        { "value": "${LANGFLOW_CONFIG_DIR=/home/langflow-data}" },
+    "langflowLogLevel":         { "value": "${LANGFLOW_LOG_LEVEL=INFO}" },
+    "langflowStorageType":       { "value": "${LANGFLOW_STORAGE_TYPE=s3}" },
+    "langflowS3BucketName":      { "value": "${LANGFLOW_OBJECT_STORAGE_BUCKET_NAME=}" },
+    "langflowS3Prefix":          { "value": "${LANGFLOW_OBJECT_STORAGE_PREFIX=}" },
+    "awsAccessKeyId":            { "value": "${AWS_ACCESS_KEY_ID=}" },
+    "awsSecretAccessKey":        { "value": "${AWS_SECRET_ACCESS_KEY=}" },
+    "awsDefaultRegion":          { "value": "${AWS_DEFAULT_REGION=}" }
+  }
+}

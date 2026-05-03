@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: langflow
+metadata:
+  template: langflow-azure-appservice
+
+# Use `azd provision` for infrastructure only.
+# Use `./deploy-azure.sh` for full deployment (backend + frontend).
+# See deploy-azure.sh for details.
+
+# Infrastructure configuration
+infra:
+  provider: bicep
+  path: infra
+  module: main

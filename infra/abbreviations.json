@@ -1,0 +1,6 @@
+{
+  "webServerFarms": "plan-",
+  "webSitesAppService": "app-",
+  "containerRegistry": "cr",
+  "webStaticSites": "swa-"
+}
