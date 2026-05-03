@@ -6,7 +6,7 @@ export default function LogoIcon() {
       <div className="flex h-8 w-8 items-center justify-center">
         <LangflowLogo
           title="Langflow Logo"
-          className="absolute h-[18px] w-[18px]"
+          className="absolute h-[18px] w-[18px] invert dark:invert-0"
         />
       </div>
     </div>

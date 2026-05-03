@@ -65,7 +65,7 @@ export default function AppHeader(): JSX.Element {
           className="mr-1 flex h-8 w-8 items-center"
           data-testid="icon-ChevronLeft"
         >
-          <LangflowLogo className="h-15 w-15" />
+          <LangflowLogo className="h-15 w-15 invert dark:invert-0" />
         </Button>
         <CustomOrgSelector />
       </div>

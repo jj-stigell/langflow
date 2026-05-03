@@ -146,7 +146,7 @@ export const BotMessage = memo(
                   }
                 >
                   <div className="flex h-5 w-5 items-center justify-center">
-                    <LangflowLogo className="h-4 w-4 text-black" />
+                    <LangflowLogo className="h-4 w-4 invert" />
                   </div>
                 </div>
               )}

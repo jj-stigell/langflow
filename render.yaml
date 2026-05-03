@@ -3,10 +3,11 @@ services:
   - type: web
     name: langflow
     runtime: docker
-    dockerfilePath: ./docker/render.Dockerfile
-    repo: https://github.com/langflow-ai/langflow
+    dockerfilePath: ./docker/build_and_push.Dockerfile
+    repo: https://github.com/jj-stigell/langflow
     branch: main
     plan: standard
+    region: frankfurt
     healthCheckPath: /health_check
     autoDeploy: false
     envVars:
